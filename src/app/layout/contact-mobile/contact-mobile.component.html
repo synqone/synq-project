@@ -1,0 +1,53 @@
+
+<div class="div">
+  <div class="contact-img">
+    <img
+      *ngIf="!isMobileView"
+      loading="lazy"
+      src="../../../assets/Rectangle 286.png"
+      class="img-3"
+    />
+    <img
+      *ngIf="isMobileView"
+      loading="lazy"
+      src="../../../assets/contact-mobile.png"
+      class="img-3"
+    />
+  </div>
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/fb7cb89e44ef240f71fb1eb1139dfc059bc2bedb515cb9630584f86b6b3e4dbd?"
+    [class.dotted-img]="!isMobileView"
+        [class.dotted-img-mobile]="isMobileView"
+  />
+  <div class="div-8-contact">
+    <div class="div-9-contact">
+      <img
+        loading="lazy"
+        srcset="
+          https://cdn.builder.io/api/v1/image/assets/TEMP/052a88b02c1190ce0b4117486b70451da23f14357931e83e93ee4789adeacd6a?apiKey=db918950ac364dff87870b1c6d58c4ce&width=100   100w,
+        "
+        class="img-4-contact"
+      />
+      <div class="div-10-contact"><span class="hit">Say</span> <span class="hello"> Hello</span></div>
+    </div>
+  </div>
+  <div class="contact-content">
+    <form class="main-form" >
+        <div class="form-class">
+            <div class="input-row">
+                <input type="text" placeholder="Name*" class="input-class" required />
+                <input type="text" placeholder="E-Mail Address*" class="input-class" required />
+                <input type="text" placeholder="Website(Optional)" class="input-class" />
+            </div>
+            <div class="input-row">
+                <input type="text" placeholder="Message(Optional)" class="input-class message-input" />
+            </div>
+        </div>
+        <div class="send-btn">
+            <button type="submit" class="div-15">Send</button>
+        </div>
+    </form>
+</div>
+</div>
+<app-footer></app-footer>

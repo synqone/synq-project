@@ -1,0 +1,49 @@
+<div class="div">
+<div class="div-2" *ngIf="!isMobileView">
+    <div class="div-3">
+      
+      <img
+        loading="lazy"
+        src="../../assets/Frame 3.png"
+        class="img-2"
+      />
+    </div>
+    <div class="div-text" *ngIf="isContactUsRoute() && !isMobileView">
+      <div class="div-5-text" routerLink="/user" routerLinkActive="active-link">User Benefits</div>
+      <div class="div-6-text" routerLink="/business" routerLinkActive="active-link">Business Benefits</div>
+    </div>
+    
+    <div class="div-4" [routerLink]="['/contact_us']">Contact Us</div>
+  </div>
+  <div  *ngIf="isMobileView">
+  <div class="div-mobile-7">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/4368c35d6a6623c32110eaaed38dad73097d5ef3da21451f6fd410df03813507?apiKey=db918950ac364dff87870b1c6d58c4ce&"
+      class="img-mobile-4"
+    />
+    <div class="div-mobile-8">
+      <img
+        loading="lazy"
+        srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/3dc9d6d099d26a07691a2edbf5a99f193b0a12d029f93ff38708644a2fec81ab?apiKey=db918950ac364dff87870b1c6d58c4ce&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/3dc9d6d099d26a07691a2edbf5a99f193b0a12d029f93ff38708644a2fec81ab?apiKey=db918950ac364dff87870b1c6d58c4ce&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3dc9d6d099d26a07691a2edbf5a99f193b0a12d029f93ff38708644a2fec81ab?apiKey=db918950ac364dff87870b1c6d58c4ce&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/3dc9d6d099d26a07691a2edbf5a99f193b0a12d029f93ff38708644a2fec81ab?apiKey=db918950ac364dff87870b1c6d58c4ce&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/3dc9d6d099d26a07691a2edbf5a99f193b0a12d029f93ff38708644a2fec81ab?apiKey=db918950ac364dff87870b1c6d58c4ce&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3dc9d6d099d26a07691a2edbf5a99f193b0a12d029f93ff38708644a2fec81ab?apiKey=db918950ac364dff87870b1c6d58c4ce&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/3dc9d6d099d26a07691a2edbf5a99f193b0a12d029f93ff38708644a2fec81ab?apiKey=db918950ac364dff87870b1c6d58c4ce&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/3dc9d6d099d26a07691a2edbf5a99f193b0a12d029f93ff38708644a2fec81ab?apiKey=db918950ac364dff87870b1c6d58c4ce&"
+        class="img-mobile-5"
+      />
+      <img
+        loading="lazy"
+        srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/ad1b17eb1333aad3708c4182ee21d51b93c43e6f3c285cf6c6a541f3d748aca0?apiKey=db918950ac364dff87870b1c6d58c4ce&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ad1b17eb1333aad3708c4182ee21d51b93c43e6f3c285cf6c6a541f3d748aca0?apiKey=db918950ac364dff87870b1c6d58c4ce&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ad1b17eb1333aad3708c4182ee21d51b93c43e6f3c285cf6c6a541f3d748aca0?apiKey=db918950ac364dff87870b1c6d58c4ce&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ad1b17eb1333aad3708c4182ee21d51b93c43e6f3c285cf6c6a541f3d748aca0?apiKey=db918950ac364dff87870b1c6d58c4ce&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ad1b17eb1333aad3708c4182ee21d51b93c43e6f3c285cf6c6a541f3d748aca0?apiKey=db918950ac364dff87870b1c6d58c4ce&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ad1b17eb1333aad3708c4182ee21d51b93c43e6f3c285cf6c6a541f3d748aca0?apiKey=db918950ac364dff87870b1c6d58c4ce&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ad1b17eb1333aad3708c4182ee21d51b93c43e6f3c285cf6c6a541f3d748aca0?apiKey=db918950ac364dff87870b1c6d58c4ce&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ad1b17eb1333aad3708c4182ee21d51b93c43e6f3c285cf6c6a541f3d748aca0?apiKey=db918950ac364dff87870b1c6d58c4ce&"
+        class="img-mobile-6"
+      />
+    </div>
+    <div style="margin-right: 1rem;">
+    <div class="div-mobile-9" [routerLink]="['contact_us']">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1a6ab3f3f8b24790936a4ce9e09b437d5c2a30b309bd82e2203891c0a1ec490?apiKey=db918950ac364dff87870b1c6d58c4ce&"
+        class="img-mobile-7"
+      />
+    </div>
+    </div>
+  </div>
+
+  </div>
+</div>
